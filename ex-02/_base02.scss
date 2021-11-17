@@ -1,0 +1,52 @@
+
+
+//for through
+@for $i from 1 through 5 { // looping tornando a classe dinamica | variável $i de 1 até 5
+  .text-#{$i}{ // vai substituir $i de 1 à 5 e aplicar o font-size
+    font-size: 15px * $i;
+  }
+}
+
+//for to
+@for $i from 1 to 5 { //mesma coisa do anterior, porem é sempre o 5 -1, então se vc quiser 5 repetições, tem que colocar 6
+  .text-#{$i}{ 
+    font-size: 15px * $i;
+  }
+}
+
+//for each
+$colors: (color1: blue, color2: red, color3: green);
+
+@each $key, $color in $colors { //para cada chave (color1, 2, 3) fazer o looping de colors
+  .#{$color}-text {color: $color;}
+}
+//isso vai gerar classes dinamicamente
+  //.blue-text {
+  // color: blue;
+  // }
+// para usar temos que colocar a classe criada na tag desejada
+
+//herança
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  @extend .flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+//usar uma classe dentro de outra usando @extend .nome-da-classe
+
+
+//referenciar \/
+p {
+  color: red;
+  &:hover { //normal e o hover dentro do mesmo escopo
+    color: blue
+  }
+}

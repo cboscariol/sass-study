@@ -1,0 +1,44 @@
+//escrever o nome do arquivo como _alguma-coisa.scss, isso é um "partials"
+
+
+$text-color: #ffffff; //criando uma variável escopo global
+
+@mixin box-shadow($color) {
+  box-shadow: 2px 2px 4px 1px rgba($color, 0.6);
+} // para criar a "função" se usa o mixin, para usar, usaremos o @include + nome da função
+
+@mixin make-bold($bool) {
+  @if $bool == true {
+    font-weight: bold
+  } // usando condicionais
+}
+
+@mixin text-effect($val) {
+  @if $val == danger {
+    color: red;  
+  } @else if  $val == alert {
+    color: orange
+  } @else {
+    color: black
+  }// usando mais condicionais
+}
+
+
+body {
+  background-color: #7159c1;
+  color: $text-color; //usando a variável
+}
+
+.container {
+  $text-color: rgb(109, 48, 109); //posso ter variáveis dentro de um determinado escopo 
+  @include box-shadow(black); // usando o mixin
+  color:  $text-color;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+    p {
+      color: red;
+      @include  make-bold(true) //usando condicionais
+    }
+    //encadeamento /\ colocar tags/classes dentro de outras classes
+}

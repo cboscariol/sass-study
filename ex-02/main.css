@@ -1,0 +1,80 @@
+.text-1 {
+  font-size: 15px;
+}
+
+.text-2 {
+  font-size: 30px;
+}
+
+.text-3 {
+  font-size: 45px;
+}
+
+.text-4 {
+  font-size: 60px;
+}
+
+.text-5 {
+  font-size: 75px;
+}
+
+.text-1 {
+  font-size: 15px;
+}
+
+.text-2 {
+  font-size: 30px;
+}
+
+.text-3 {
+  font-size: 45px;
+}
+
+.text-4 {
+  font-size: 60px;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.flex, body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+p {
+  color: red;
+}
+
+p:hover {
+  color: blue;
+}
+
+body {
+  background-color: yellow;
+}
+/*# sourceMappingURL=main.css.map */

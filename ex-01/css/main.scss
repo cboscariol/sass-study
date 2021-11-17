@@ -1,0 +1,22 @@
+@import 'base'; //esse arquivo só é compilado aqui dentro pq foi escrito com _ no nome do arquivo _base.scss
+
+
+
+// criar as variáveis antes dos @imports
+
+
+
+@function set-text-color($color){
+  @if lightness($color) > 70 {
+    @return #333;
+  }
+  @else {
+    @return #fff
+  }
+}
+;
+
+// para usar ex.:
+
+// background-color: $primary-color;
+// color: set-text-color($primary-color;)

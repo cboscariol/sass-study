@@ -1,0 +1,19 @@
+body {
+  background-color: #7159c1;
+  color: #ffffff;
+}
+
+.container {
+  -webkit-box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.6);
+  color: #6d306d;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+}
+
+.container p {
+  color: red;
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
